@@ -20,11 +20,11 @@ import java.util.concurrent.Callable;
 import nl.vu.qa_for_lod.graph.Direction;
 import nl.vu.qa_for_lod.graph.EndPoint;
 
-import org.deri.any23.Any23;
-import org.deri.any23.extractor.ExtractionException;
-import org.deri.any23.http.HTTPClient;
-import org.deri.any23.source.DocumentSource;
-import org.deri.any23.source.HTTPDocumentSource;
+import org.apache.any23.Any23;
+import org.apache.any23.extractor.ExtractionException;
+import org.apache.any23.http.HTTPClient;
+import org.apache.any23.source.DocumentSource;
+import org.apache.any23.source.HTTPDocumentSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

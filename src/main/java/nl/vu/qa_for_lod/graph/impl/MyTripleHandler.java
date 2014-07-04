@@ -8,9 +8,9 @@ import java.util.Set;
 
 import nl.vu.qa_for_lod.graph.Direction;
 
-import org.deri.any23.extractor.ExtractionContext;
-import org.deri.any23.writer.TripleHandler;
-import org.deri.any23.writer.TripleHandlerException;
+import org.apache.any23.extractor.ExtractionContext;
+import org.apache.any23.writer.TripleHandler;
+import org.apache.any23.writer.TripleHandlerException;
 import org.openrdf.model.Resource;
 import org.openrdf.model.URI;
 import org.openrdf.model.Value;
@@ -43,7 +43,7 @@ public class MyTripleHandler implements TripleHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * org.deri.any23.writer.TripleHandler#startDocument(org.openrdf.model.URI)
+	 * org.apache.any23.writer.TripleHandler#startDocument(org.openrdf.model.URI)
 	 */
 	public void startDocument(URI documentURI) throws TripleHandlerException {
 	}
@@ -52,7 +52,7 @@ public class MyTripleHandler implements TripleHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * org.deri.any23.writer.TripleHandler#openContext(org.deri.any23.extractor
+	 * org.apache.any23.writer.TripleHandler#openContext(org.apache.any23.extractor
 	 * .ExtractionContext)
 	 */
 	public void openContext(ExtractionContext context) throws TripleHandlerException {
@@ -62,9 +62,9 @@ public class MyTripleHandler implements TripleHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * org.deri.any23.writer.TripleHandler#receiveTriple(org.openrdf.model.Resource
+	 * org.apache.any23.writer.TripleHandler#receiveTriple(org.openrdf.model.Resource
 	 * , org.openrdf.model.URI, org.openrdf.model.Value, org.openrdf.model.URI,
-	 * org.deri.any23.extractor.ExtractionContext)
+	 * org.apache.any23.extractor.ExtractionContext)
 	 */
 	public void receiveTriple(Resource s, URI p, Value o, URI g, ExtractionContext context)
 			throws TripleHandlerException {
@@ -91,8 +91,8 @@ public class MyTripleHandler implements TripleHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * org.deri.any23.writer.TripleHandler#receiveNamespace(java.lang.String,
-	 * java.lang.String, org.deri.any23.extractor.ExtractionContext)
+	 * org.apache.any23.writer.TripleHandler#receiveNamespace(java.lang.String,
+	 * java.lang.String, org.apache.any23.extractor.ExtractionContext)
 	 */
 	public void receiveNamespace(String prefix, String uri, ExtractionContext context) throws TripleHandlerException {
 	}
@@ -101,7 +101,7 @@ public class MyTripleHandler implements TripleHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * org.deri.any23.writer.TripleHandler#closeContext(org.deri.any23.extractor
+	 * org.apache.any23.writer.TripleHandler#closeContext(org.apache.any23.extractor
 	 * .ExtractionContext)
 	 */
 	public void closeContext(ExtractionContext context) throws TripleHandlerException {
@@ -111,7 +111,7 @@ public class MyTripleHandler implements TripleHandler {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * org.deri.any23.writer.TripleHandler#endDocument(org.openrdf.model.URI)
+	 * org.apache.any23.writer.TripleHandler#endDocument(org.openrdf.model.URI)
 	 */
 	public void endDocument(URI documentURI) throws TripleHandlerException {
 	}
@@ -119,7 +119,7 @@ public class MyTripleHandler implements TripleHandler {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.deri.any23.writer.TripleHandler#setContentLength(long)
+	 * @see org.apache.any23.writer.TripleHandler#setContentLength(long)
 	 */
 	public void setContentLength(long contentLength) {
 	}
@@ -127,7 +127,7 @@ public class MyTripleHandler implements TripleHandler {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.deri.any23.writer.TripleHandler#close()
+	 * @see org.apache.any23.writer.TripleHandler#close()
 	 */
 	public void close() throws TripleHandlerException {
 	}

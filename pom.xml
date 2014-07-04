@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<aksw.commons.version>0.2-SNAPSHOT</aksw.commons.version>
+		<aksw.commons.version>0.4-SNAPSHOT</aksw.commons.version>
 	</properties>
 
 	<build>
@@ -174,9 +174,9 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.deri.any23</groupId>
-			<artifactId>any23-core</artifactId>
-			<version>0.5.0</version>
+			<groupId>org.apache.any23</groupId>
+			<artifactId>apache-any23-core</artifactId>
+			<version>1.0</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>slf4j-api</artifactId>
@@ -194,7 +194,8 @@
 					<artifactId>slf4j-log4j12</artifactId>
 					<groupId>org.slf4j</groupId>
 				</exclusion>
-			</exclusions>
+            </exclusions>
+
 		</dependency>
 		<dependency>
 			<groupId>com.hp.hpl.jena</groupId>

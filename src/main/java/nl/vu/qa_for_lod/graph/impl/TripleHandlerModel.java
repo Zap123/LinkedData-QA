@@ -1,8 +1,8 @@
 package nl.vu.qa_for_lod.graph.impl;
 
-import org.deri.any23.extractor.ExtractionContext;
-import org.deri.any23.writer.TripleHandler;
-import org.deri.any23.writer.TripleHandlerException;
+import org.apache.any23.extractor.ExtractionContext;
+import org.apache.any23.writer.TripleHandler;
+import org.apache.any23.writer.TripleHandlerException;
 import org.openrdf.model.URI;
 import org.openrdf.model.Value;
 
@@ -40,9 +40,9 @@ public class TripleHandlerModel
 	 * (non-Javadoc)
 	 *
 	 * @see
-	 * org.deri.any23.writer.TripleHandler#receiveTriple(org.openrdf.model.Resource
+	 * org.apache.any23.writer.TripleHandler#receiveTriple(org.openrdf.model.Resource
 	 * , org.openrdf.model.URI, org.openrdf.model.Value, org.openrdf.model.URI,
-	 * org.deri.any23.extractor.ExtractionContext)
+	 * org.apache.any23.extractor.ExtractionContext)
 	 */
 	public void receiveTriple(org.openrdf.model.Resource s, URI p, Value o, URI g, ExtractionContext context)
 			throws TripleHandlerException {
